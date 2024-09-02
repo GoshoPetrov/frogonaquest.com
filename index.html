@@ -3,13 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>frogonaquest</title>
+    <title>Other Webs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 10px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .projects {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        .project-card {
+            background-color: #eaeaea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h2 {
+            margin: 0 0 10px 0;
+        }
+
+        .project-card p {
+            margin: 0 0 20px 0;
+        }
+
+        .project-card button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .project-card button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>The Frog is on a Quest!</h1>
-    <h1>Intro quest successfully completed!</h1>
-    <a href="/wordle/">Wordle</a>
+    <header>
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Welcome Frog on a quest. Webs:</p>
+        </div>
+    </header>
+    
+    <section class="projects">
+        <div class="container">
+            <div class="project-card">
+                <h2>Wordle</h2>
+                <p>Basically a wordle</p>
+                <button onclick="redirectTo('https://frogonaquest.com/wordle/')">Go to wordle</button>
+            </div>
 
-    <a href="/minecraft/">Minecraft Server</a>
+            <div class="project-card">
+                <h2>My minecraft server</h2>
+                <p>With mods</p>
+                <button onclick="redirectTo('https://frogonaquest.com/minecraft/')">Minecraft Server</button>
+            </div>
+
+            <div class="project-card">
+                <h2>Practice web</h2>
+                <p>Still no idea what I am going to do with this</p>
+                <button onclick="redirectTo('https://frogonaquest.com/web/')">View Project</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>
